@@ -1,0 +1,44 @@
+{
+  "toronto_01": {
+    "city": "Toronto",
+    "demo": {
+      "seconds": 31.17,
+      "vehicles_tracked_ids": {
+        "car": 157,
+        "motorcycle": 24,
+        "bus": 1,
+        "truck": 20
+      },
+      "people_tracked_ids": 814,
+      "line_crossings": 6
+    },
+    "strict": {
+      "window_s": 12.0,
+      "vehicle_passages": 4,
+      "zone_tracks_observed": 7,
+      "complete_zone_visits": 8,
+      "partial_zone_visits": 8
+    }
+  },
+  "london_01": {
+    "city": "London",
+    "demo": {
+      "seconds": 21.76,
+      "vehicles_tracked_ids": {
+        "car": 42,
+        "motorcycle": 0,
+        "bus": 7,
+        "truck": 8
+      },
+      "people_tracked_ids": 108,
+      "line_crossings": 10
+    },
+    "strict": {
+      "window_s": 12.0,
+      "vehicle_passages": 7,
+      "zone_tracks_observed": 8,
+      "complete_zone_visits": 0,
+      "partial_zone_visits": 10
+    }
+  }
+}

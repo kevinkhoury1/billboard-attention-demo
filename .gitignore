@@ -7,5 +7,7 @@
 /config/marketing_private.yaml
 !/data/raw_videos/.gitkeep
 !/data/outputs/.gitkeep
+!/data/outputs/phase7_demo/
+/.venv-cv/
 __pycache__/
 *.pt

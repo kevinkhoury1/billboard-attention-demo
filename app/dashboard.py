@@ -40,6 +40,9 @@ def show_sites(comparison):
                 st.write(f"Median time in zone for complete visits · **{dwell:.2f} s**")
             st.markdown(f"[Watch the source clip]({site['source']['source_url']})")
 
+    st.caption("These counts are vehicles that crossed one marked line, in one direction, inside the marked zone, during "
+               "the window above. They are much lower than the number of vehicles visible in the footage, which is shown "
+               "on the Detection demo tab.")
     st.info("London had more crossings in its clip. Road coverage and lighting differ, and only one Toronto car had "
             "a complete visit. These samples give us too little evidence to rank the placements.")
 
@@ -58,6 +61,45 @@ def show_sites(comparison):
         ], hide_index=True, width="stretch")
         st.caption("The timestamp marks when the bottom centre of the tracked vehicle box crossed the line. "
                    "The manual check covers only the interval above.")
+
+
+def show_detection_demo(demo, attention):
+    st.subheader("What does the AI see in the footage?")
+    st.caption("YOLO11m detects vehicles and people. ByteTrack gives each one an ID. "
+               "Colours: green car, yellow truck, blue bus, magenta motorcycle, orange person, red vehicle that crossed the "
+               "yellow counting line in the marked direction. Green outline is the road zone. Blue outline is the screen.")
+    columns = st.columns(len(demo), border=True)
+    for column, (clip, item) in zip(columns, demo.items()):
+        with column:
+            st.markdown(f"#### {item['city']}")
+            st.image(str(OUTPUTS / "phase7_demo" / f"{clip}.gif"), width="stretch")
+            with st.expander("Key frames"):
+                for index in range(3):
+                    frame = OUTPUTS / "phase7_demo" / "frames" / f"{clip}_{index}.jpg"
+                    if frame.exists():
+                        st.image(str(frame), width="stretch")
+
+    st.markdown("#### From everything detected to what can be counted as an opportunity to see")
+    face_note = (f"{attention['pedestrian_tracks_with_a_detected_face']} of {attention['pedestrian_tracks']} people had a "
+                 f"face detected; 0 had a sustained usable pose ({attention['settings']['min_face_width_px']} px minimum)")
+    rows = []
+    for clip, item in demo.items():
+        vehicles = sum(item["demo"]["vehicles_tracked_ids"].values())
+        strict = item["strict"]
+        rows.append({
+            "Clip": item["city"],
+            "1. Vehicle IDs tracked (whole clip)": vehicles,
+            "2. Vehicle tracks seen in the zone": strict["zone_tracks_observed"],
+            "3. Crossed the line, marked direction": strict["vehicle_passages"],
+            "Window for steps 2-3": f"{strict['window_s']:.1f} s",
+            "4. Faces usable for head direction": face_note if clip == "toronto_01" else "Not measured",
+            "5. Looked at the billboard": "Unavailable",
+        })
+    st.dataframe(rows, hide_index=True, width="stretch")
+    st.info("Step 1 counts every ID the tracker issued, so it overstates the number of real vehicles: one car that is "
+            "hidden for a moment gets a new ID. Steps 2-3 use stricter thresholds and one marked lane, over a stated "
+            "window. Steps 4-5 are unavailable because faces in this footage are too small and the camera geometry to "
+            "the screen is unmeasured. We report that gap rather than invent an attention number.")
 
 
 def show_attention(attention, biwi, head_turn):
@@ -163,10 +205,12 @@ def main():
             <p>What traffic footage can tell an advertiser, and which decisions need campaign data.</p>
         </div>
     """, unsafe_allow_html=True)
-    placement, attention, campaign, formulas = st.tabs([
-        "Site comparison", "Attention test", "Campaign impact", "Marketing formulas"
+    detection, placement, attention, campaign, formulas = st.tabs([
+        "Detection demo", "Site comparison", "Attention test", "Campaign impact", "Marketing formulas"
     ])
     try:
+        with detection:
+            show_detection_demo(read_result("phase7_demo/detection_demo.json"), read_result("phase3_toronto/attention.json"))
         with placement:
             show_sites(read_result("phase4/comparison.json"))
         with attention:
