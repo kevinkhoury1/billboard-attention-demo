@@ -1,0 +1,4 @@
+site_id,video,start_s,end_s,confirmed,possible_additional,source,notes
+highway_01,highway_01.mp4,0,5,2,,Phase 1 user tally and visual review,At least one additional vehicle was partly hidden. Exact count pending.
+toronto_01,toronto_01.mp4,3.5,4.5,1,0,User-confirmed manual review of the Toronto clip,Only the silver convertible crosses in the counted direction.
+london_01,london_01.mp4,8.5,11.5,1,0,User-confirmed manual review of the London clip,One black car fully clears the marked line from left to right. This window excludes the earlier overlapping traffic.

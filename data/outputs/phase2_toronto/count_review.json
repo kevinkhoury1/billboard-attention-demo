@@ -1,0 +1,22 @@
+{
+  "site_id": "toronto_01",
+  "clip": "toronto_01.mp4",
+  "windows": [
+    {
+      "start_s": 3.5,
+      "end_s": 4.5,
+      "manual_confirmed": 1,
+      "manual_maximum": 1,
+      "ai_crossings": 1,
+      "manual_exact": true,
+      "consistent_with_manual_bounds": true,
+      "signed_error": 0,
+      "absolute_percent_error": 0.0,
+      "source": "User-confirmed manual review of the Toronto clip",
+      "notes": "Only the silver convertible crosses in the counted direction."
+    }
+  ],
+  "exact_windows": 1,
+  "mean_absolute_error": 0.0,
+  "mape_percent": 0.0
+}

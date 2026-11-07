@@ -1,0 +1,62 @@
+{
+  "dataset": "BIWI Kinect Head Pose, fast.ai RGB archive",
+  "archive": "biwi_head_pose.tgz",
+  "source": "https://docs.fast.ai/tutorial.vision.html#points",
+  "dataset_terms": "https://huggingface.co/datasets/ETHZurich/biwi_kinect_head_pose",
+  "sample_rule": "Frame number divisible by 100 in each recording",
+  "frames_sampled": 156,
+  "recordings_sampled": 24,
+  "recordings_with_scored_frames": 24,
+  "sample_outcomes": {
+    "no_face": 5,
+    "scored": 144,
+    "too_small": 7
+  },
+  "scored_fraction": 0.9230769230769231,
+  "models": {
+    "face": "scrfd_500m.onnx",
+    "pose": "6DRepNet_300W_LP_AFLW2000.pth"
+  },
+  "native_resolution": {
+    "frames": 144,
+    "mean_absolute_error_deg": 4.409536199486788,
+    "mae_by_axis_deg": {
+      "pitch": 6.454553209524191,
+      "yaw": 3.702770873423322,
+      "roll": 3.0712845155128545
+    }
+  },
+  "resolution_stress_test": {
+    "native_paired": {
+      "frames": 144,
+      "mean_absolute_error_deg": 4.409536199486788,
+      "mae_by_axis_deg": {
+        "pitch": 6.454553209524191,
+        "yaw": 3.702770873423322,
+        "roll": 3.0712845155128545
+      }
+    },
+    "reduced_face_width_px": {
+      "40": {
+        "frames": 144,
+        "mean_absolute_error_deg": 4.639138225568144,
+        "mae_by_axis_deg": {
+          "pitch": 6.770125137580091,
+          "yaw": 3.9898189556132073,
+          "roll": 3.1574705835111363
+        }
+      },
+      "20": {
+        "frames": 144,
+        "mean_absolute_error_deg": 6.541596376009004,
+        "mae_by_axis_deg": {
+          "pitch": 9.853714550567442,
+          "yaw": 5.6384456443169455,
+          "roll": 4.1326289331426285
+        }
+      }
+    }
+  },
+  "scope": "Head-pose error on sampled BIWI frames that pass the quality gate. Resize stress test uses paired real faces.",
+  "archive_sha256": "9cfefd53ed85f824c5908bc6eb21fc719583eec57a7df1d8141d3156645693cf"
+}

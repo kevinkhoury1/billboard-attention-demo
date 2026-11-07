@@ -1,0 +1,11 @@
+/.venv/
+/.uv-cache/
+/.ultralytics/
+/weights/
+/data/raw_videos/*
+/data/outputs/*
+/config/marketing_private.yaml
+!/data/raw_videos/.gitkeep
+!/data/outputs/.gitkeep
+__pycache__/
+*.pt

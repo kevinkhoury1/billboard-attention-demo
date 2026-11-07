@@ -1,0 +1,2 @@
+sixdrepnet==0.1.6
+onnxruntime>=1.20,<2

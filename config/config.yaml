@@ -1,0 +1,13 @@
+model: yolo11m.pt
+sample_fps: 10
+image_size: 640
+tracker_input_confidence: 0.1
+nms_iou: 0.5
+min_box_area_px: 100
+class_confidence:
+  car: 0.35
+  motorcycle: 0.35
+  bus: 0.35
+  truck: 0.35
+max_track_gap_s: 0.5
+speed_window_s: 0.4

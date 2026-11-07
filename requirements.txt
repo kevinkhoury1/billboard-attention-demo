@@ -1,0 +1,6 @@
+ultralytics==8.3.235
+opencv-python>=4.12,<5
+av>=14,<19
+lap>=0.5.12,<1
+pyarrow>=19,<25
+PyYAML>=6,<7

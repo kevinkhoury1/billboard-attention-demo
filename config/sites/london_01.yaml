@@ -1,0 +1,25 @@
+site_id: london_01
+scenario: city_intersection_night_digital
+camera: fixed
+zone_kind: billboard_visibility
+zone_basis: >-
+  Approximate road strip across the visible side of Piccadilly Lights at Piccadilly Circus.
+  Count left-to-right vehicles on the marked segment in the first 12 seconds.
+  This is a screen-level potential viewing zone. The upper screen edge is cropped,
+  and the driver's sightline, spot schedule and temporary obstructions are unverified.
+frame_size: [1280, 720]
+zone:
+  - [65, 501]
+  - [1030, 518]
+  - [1030, 578]
+  - [65, 588]
+counting_line:
+  - [610, 515]
+  - [610, 582]
+crossing_direction: positive_to_negative
+billboard:
+  - [207, 0]
+  - [968, 0]
+  - [969, 351]
+  - [185, 356]
+calibration: null

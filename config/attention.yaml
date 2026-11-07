@@ -1,0 +1,13 @@
+sample_fps: 5
+person_image_size: 1280
+person_confidence: 0.35
+face_input_size: 320
+face_confidence: 0.55
+min_face_width_px: 40
+min_blur_variance: 30
+max_highlight_fraction: 0.25
+max_dark_fraction: 0.45
+cone_degrees: 20
+min_assessable_s: 0.4
+min_facing_s: 0.4
+max_gap_s: 0.3

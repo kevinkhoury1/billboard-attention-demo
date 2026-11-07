@@ -1,0 +1,17 @@
+site_id: highway_01
+scenario: highway_day
+camera: fixed
+zone_kind: traffic_only
+zone_basis: Manually marked section of the approaching carriageway in the stock clip. The counting line follows the overpass shadow across part of that carriageway.
+frame_size: [1280, 720]
+zone:
+  - [162, 283]
+  - [511, 283]
+  - [752, 536]
+  - [116, 536]
+counting_line:
+  - [127, 403]
+  - [605, 383]
+crossing_direction: negative_to_positive
+billboard: null
+calibration: null

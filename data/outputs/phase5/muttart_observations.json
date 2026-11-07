@@ -1,0 +1,23 @@
+{
+  "study": "Sales Response to Outdoor Advertising, Bhargava and Donthu (1999)",
+  "source": "https://doi.org/10.1080/00218499.1999.12466616",
+  "source_table": "Table 1, page 12",
+  "outcome": "Year-over-year percentage change in average daily paying visitors",
+  "treated_venue": "Muttart Conservatory",
+  "comparison_venue": "S & S Center",
+  "periods": {
+    "before": {"treated": -32.8, "comparison": -53.1},
+    "during": {"treated": 57.9, "comparison": -51.1}
+  },
+  "weekly": [
+    {"week": 1, "treated": -42.6, "comparison": -44.4},
+    {"week": 2, "treated": -41.3, "comparison": -59.4},
+    {"week": 3, "treated": -27.3, "comparison": -52.4},
+    {"week": 4, "treated": -2.7, "comparison": -55.7},
+    {"week": 5, "treated": 45.2, "comparison": -39.1},
+    {"week": 6, "treated": 60.9, "comparison": -24.3},
+    {"week": 7, "treated": 64.3, "comparison": -78.7},
+    {"week": 8, "treated": 63.3, "comparison": -39.2}
+  ],
+  "first_campaign_week": 5
+}

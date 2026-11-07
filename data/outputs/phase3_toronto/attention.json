@@ -1,0 +1,56 @@
+{
+  "phase": 3,
+  "site_id": "toronto_01",
+  "video": "toronto_01.mp4",
+  "provenance": {
+    "filename": "toronto_01.mp4",
+    "source_url": "https://www.pexels.com/video/dynamic-urban-intersection-with-billboards-34602127/",
+    "creator": "Hao Le",
+    "licence": "Pexels License",
+    "licence_url": "https://www.pexels.com/license/",
+    "date_checked": "2026-11-05",
+    "location": "Yonge and Dundas, Toronto (10 Dundas Street East)",
+    "conditions": "Educational analysis of a single clip. Use only the first 12 seconds with this annotation."
+  },
+  "scope": "Detected pedestrian tracks in the marked area, with temporary within-clip track IDs",
+  "zone_basis": "Pedestrian sidewalk and crossing area visible on the far side of the Toronto clip.",
+  "frames_processed": 61,
+  "observation_s": 12.0,
+  "target_geometry_source": null,
+  "attention_status": "unavailable_no_scene_calibration",
+  "pedestrian_tracks_with_a_detected_face": 31,
+  "person_frame_quality_counts": {
+    "no_associated_face": 402,
+    "too_small": 140
+  },
+  "settings": {
+    "sample_fps": 5,
+    "person_image_size": 1280,
+    "person_confidence": 0.35,
+    "face_input_size": 320,
+    "face_confidence": 0.55,
+    "min_face_width_px": 40,
+    "min_blur_variance": 30,
+    "max_highlight_fraction": 0.25,
+    "max_dark_fraction": 0.45,
+    "cone_degrees": 20,
+    "min_assessable_s": 0.4,
+    "min_facing_s": 0.4,
+    "max_gap_s": 0.3
+  },
+  "models": {
+    "person": "yolo11m.pt",
+    "tracker": "ByteTrack",
+    "face": "scrfd_500m.onnx",
+    "head_pose": "6DRepNet_300W_LP_AFLW2000.pth"
+  },
+  "pedestrian_tracks": 77,
+  "pedestrian_tracks_with_sustained_usable_pose": 0,
+  "sustained_pose_coverage": 0.0,
+  "assessable_pedestrian_tracks": null,
+  "billboard_facing_pedestrian_tracks": null,
+  "pedestrian_tracks_without_sustained_facing": null,
+  "unassessable_pedestrian_tracks": 77,
+  "billboard_facing_rate_among_assessable": null,
+  "observed_sustained_facing_seconds": null
+}

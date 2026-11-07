@@ -1,0 +1,11 @@
+site_id: toronto_01
+video: toronto_01.mp4
+end_s: 12
+zone_basis: Pedestrian sidewalk and crossing area visible on the far side of the Toronto clip.
+pedestrian_zone:
+  - [48, 2850]
+  - [2100, 2850]
+  - [2100, 3290]
+  - [48, 3170]
+# A real scene calibration is required to compare head direction to the screen.
+geometry: null

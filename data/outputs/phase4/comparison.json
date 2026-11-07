@@ -1,0 +1,261 @@
+{
+  "phase": 4,
+  "window_s": {
+    "start": 0,
+    "end_exclusive": 11.9119
+  },
+  "sites": [
+    {
+      "site_id": "toronto_01",
+      "phase1_run": "phase1_toronto",
+      "source": {
+        "filename": "toronto_01.mp4",
+        "source_url": "https://www.pexels.com/video/dynamic-urban-intersection-with-billboards-34602127/",
+        "creator": "Hao Le",
+        "licence": "Pexels License",
+        "licence_url": "https://www.pexels.com/license/",
+        "date_checked": "2026-11-05",
+        "location": "Yonge and Dundas, Toronto (10 Dundas Street East)",
+        "conditions": "Educational analysis of a single clip. Use only the first 12 seconds with this annotation."
+      },
+      "crossing_direction": "negative_to_positive",
+      "vehicle_crossings": 4,
+      "crossings_matched_to_zone": 4,
+      "complete_matched_zone_visits": 1,
+      "partial_matched_zone_visits": 3,
+      "median_complete_matched_zone_time_s": 2.5,
+      "person_ots": null,
+      "attentive_people": null,
+      "cpm": null,
+      "attentive_cpm": null,
+      "measured_attention_to_owner_audience_ratio": null,
+      "crossing_details": [
+        {
+          "track_id": 3,
+          "vehicle_class": "car",
+          "crossing_s": 0.056244228196508796,
+          "zone_visit": {
+            "kind": "zone_visit",
+            "track_id": 3,
+            "vehicle_class": "car",
+            "start_s": 0.0,
+            "end_s": 2.8499999999999996,
+            "duration_s": 2.8499999999999996,
+            "entry_observed": false,
+            "exit_observed": true,
+            "speed_kmh": null,
+            "direction": null
+          },
+          "complete_within_window": false
+        },
+        {
+          "track_id": 2,
+          "vehicle_class": "car",
+          "crossing_s": 1.4779055999684716,
+          "zone_visit": {
+            "kind": "zone_visit",
+            "track_id": 2,
+            "vehicle_class": "car",
+            "start_s": 0.0,
+            "end_s": 3.3499999999999996,
+            "duration_s": 3.3499999999999996,
+            "entry_observed": false,
+            "exit_observed": true,
+            "speed_kmh": null,
+            "direction": null
+          },
+          "complete_within_window": false
+        },
+        {
+          "track_id": 26,
+          "vehicle_class": "car",
+          "crossing_s": 4.078155388876533,
+          "zone_visit": {
+            "kind": "zone_visit",
+            "track_id": 26,
+            "vehicle_class": "car",
+            "start_s": 3.3499999999999996,
+            "end_s": 5.85,
+            "duration_s": 2.5,
+            "entry_observed": true,
+            "exit_observed": true,
+            "speed_kmh": null,
+            "direction": null
+          },
+          "complete_within_window": true
+        },
+        {
+          "track_id": 87,
+          "vehicle_class": "truck",
+          "crossing_s": 11.19499697837564,
+          "zone_visit": {
+            "kind": "zone_visit",
+            "track_id": 87,
+            "vehicle_class": "truck",
+            "start_s": 10.95,
+            "end_s": 12.0,
+            "duration_s": 1.0500000000000007,
+            "entry_observed": true,
+            "exit_observed": false,
+            "speed_kmh": null,
+            "direction": null
+          },
+          "complete_within_window": false
+        }
+      ]
+    },
+    {
+      "site_id": "london_01",
+      "phase1_run": "phase1_london",
+      "source": {
+        "filename": "london_01.mp4",
+        "source_url": "https://www.pexels.com/video/illuminated-billboard-along-the-road-2112773/",
+        "creator": "George Morina",
+        "licence": "Pexels License",
+        "licence_url": "https://www.pexels.com/license/",
+        "date_checked": "2026-11-05",
+        "location": "Piccadilly Lights at Piccadilly Circus, London",
+        "conditions": "Educational vehicle analysis. Use the first 12 seconds with this annotation."
+      },
+      "crossing_direction": "positive_to_negative",
+      "vehicle_crossings": 7,
+      "crossings_matched_to_zone": 7,
+      "complete_matched_zone_visits": 0,
+      "partial_matched_zone_visits": 7,
+      "median_complete_matched_zone_time_s": null,
+      "person_ots": null,
+      "attentive_people": null,
+      "cpm": null,
+      "attentive_cpm": null,
+      "measured_attention_to_owner_audience_ratio": null,
+      "crossing_details": [
+        {
+          "track_id": 1,
+          "vehicle_class": "bus",
+          "crossing_s": 0.32738153826786315,
+          "zone_visit": {
+            "kind": "zone_visit",
+            "track_id": 1,
+            "vehicle_class": "bus",
+            "start_s": 0.0,
+            "end_s": 2.05205,
+            "duration_s": 2.05205,
+            "entry_observed": false,
+            "exit_observed": true,
+            "speed_kmh": null,
+            "direction": null
+          },
+          "complete_within_window": false
+        },
+        {
+          "track_id": 2,
+          "vehicle_class": "car",
+          "crossing_s": 1.6619479511923345,
+          "zone_visit": {
+            "kind": "zone_visit",
+            "track_id": 2,
+            "vehicle_class": "car",
+            "start_s": 1.1011,
+            "end_s": 3.95395,
+            "duration_s": 2.85285,
+            "entry_observed": false,
+            "exit_observed": true,
+            "speed_kmh": null,
+            "direction": null
+          },
+          "complete_within_window": false
+        },
+        {
+          "track_id": 5,
+          "vehicle_class": "car",
+          "crossing_s": 2.7755628952984677,
+          "zone_visit": {
+            "kind": "zone_visit",
+            "track_id": 5,
+            "vehicle_class": "car",
+            "start_s": 0.6006,
+            "end_s": 4.45445,
+            "duration_s": 3.8538499999999996,
+            "entry_observed": false,
+            "exit_observed": true,
+            "speed_kmh": null,
+            "direction": null
+          },
+          "complete_within_window": false
+        },
+        {
+          "track_id": 7,
+          "vehicle_class": "car",
+          "crossing_s": 3.622886000531454,
+          "zone_visit": {
+            "kind": "zone_visit",
+            "track_id": 7,
+            "vehicle_class": "car",
+            "start_s": 1.55155,
+            "end_s": 5.7057,
+            "duration_s": 4.1541500000000005,
+            "entry_observed": true,
+            "exit_observed": false,
+            "speed_kmh": null,
+            "direction": null
+          },
+          "complete_within_window": false
+        },
+        {
+          "track_id": 16,
+          "vehicle_class": "car",
+          "crossing_s": 4.555265244794693,
+          "zone_visit": {
+            "kind": "zone_visit",
+            "track_id": 16,
+            "vehicle_class": "car",
+            "start_s": 3.3033,
+            "end_s": 6.35635,
+            "duration_s": 3.05305,
+            "entry_observed": false,
+            "exit_observed": true,
+            "speed_kmh": null,
+            "direction": null
+          },
+          "complete_within_window": false
+        },
+        {
+          "track_id": 17,
+          "vehicle_class": "car",
+          "crossing_s": 5.232649241862607,
+          "zone_visit": {
+            "kind": "zone_visit",
+            "track_id": 17,
+            "vehicle_class": "car",
+            "start_s": 4.9049,
+            "end_s": 7.35735,
+            "duration_s": 2.4524500000000007,
+            "entry_observed": false,
+            "exit_observed": true,
+            "speed_kmh": null,
+            "direction": null
+          },
+          "complete_within_window": false
+        },
+        {
+          "track_id": 41,
+          "vehicle_class": "car",
+          "crossing_s": 10.43853351243807,
+          "zone_visit": {
+            "kind": "zone_visit",
+            "track_id": 41,
+            "vehicle_class": "car",
+            "start_s": 9.15915,
+            "end_s": 11.9119,
+            "duration_s": 2.752749999999999,
+            "entry_observed": true,
+            "exit_observed": false,
+            "speed_kmh": null,
+            "direction": null
+          },
+          "complete_within_window": false
+        }
+      ]
+    }
+  ]
+}

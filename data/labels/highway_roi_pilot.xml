@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <!-- Hand-drawn boxes on original highway_01.mp4 frames 84 and 87, inside the marked zone. Tool smoke test only. -->
+  <meta>
+    <task>
+      <start_frame>0</start_frame>
+      <stop_frame>87</stop_frame>
+      <original_size><width>1280</width><height>720</height></original_size>
+    </task>
+  </meta>
+  <track id="1" label="car" source="manual">
+    <box frame="84" outside="0" occluded="0" keyframe="1" xtl="194" ytl="245" xbr="279" ybr="300"/>
+    <box frame="87" outside="0" occluded="0" keyframe="1" xtl="195" ytl="247" xbr="280" ybr="304"/>
+  </track>
+  <track id="2" label="car" source="manual">
+    <box frame="84" outside="0" occluded="0" keyframe="1" xtl="397" ytl="246" xbr="484" ybr="315"/>
+    <box frame="87" outside="0" occluded="0" keyframe="1" xtl="399" ytl="249" xbr="485" ybr="317"/>
+  </track>
+  <track id="3" label="car" source="manual">
+    <box frame="84" outside="0" occluded="1" keyframe="1" xtl="190" ytl="299" xbr="300" ybr="374"/>
+    <box frame="87" outside="0" occluded="1" keyframe="1" xtl="192" ytl="301" xbr="301" ybr="378"/>
+  </track>
+  <track id="4" label="car" source="manual">
+    <box frame="84" outside="0" occluded="0" keyframe="1" xtl="204" ytl="335" xbr="316" ybr="414"/>
+    <box frame="87" outside="0" occluded="0" keyframe="1" xtl="205" ytl="337" xbr="316" ybr="420"/>
+  </track>
+  <track id="5" label="car" source="manual">
+    <box frame="84" outside="0" occluded="1" keyframe="1" xtl="445" ytl="350" xbr="553" ybr="443"/>
+    <box frame="87" outside="0" occluded="1" keyframe="1" xtl="448" ytl="355" xbr="556" ybr="450"/>
+  </track>
+  <track id="6" label="car" source="manual">
+    <box frame="84" outside="0" occluded="0" keyframe="1" xtl="466" ytl="374" xbr="608" ybr="503"/>
+    <box frame="87" outside="0" occluded="0" keyframe="1" xtl="473" ytl="383" xbr="615" ybr="513"/>
+  </track>
+</annotations>

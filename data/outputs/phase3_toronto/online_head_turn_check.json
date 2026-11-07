@@ -1,0 +1,605 @@
+{
+  "source": "https://www.pexels.com/video/a-man-turning-his-head-sideways-5474326/",
+  "creator": "cottonbro studio",
+  "licence": "Pexels License",
+  "licence_url": "https://www.pexels.com/license/",
+  "scope": "One real subject, pose relative to the camera optical axis. No billboard target or ground-truth eye gaze.",
+  "manual_reference": "Visual labels on five stable intervals chosen before inference. Transitions are excluded.",
+  "sample_fps": 5,
+  "front_angle_limit_deg": 20,
+  "minimum_sustained_s": 0.4,
+  "checked_frames": 58,
+  "assessable_frames": 58,
+  "agreeing_assessable_frames": 58,
+  "windows": [
+    {
+      "start_s": 0.4,
+      "end_s": 1.8,
+      "manual": "front",
+      "frame_counts": {
+        "front": 7
+      },
+      "longest_run_s": {
+        "front": 1.2000000000000002,
+        "turned": 0.0
+      },
+      "sustained_manual_state_detected": true
+    },
+    {
+      "start_s": 4.4,
+      "end_s": 8.4,
+      "manual": "turned",
+      "frame_counts": {
+        "turned": 20
+      },
+      "longest_run_s": {
+        "front": 0.0,
+        "turned": 3.799999999999999
+      },
+      "sustained_manual_state_detected": true
+    },
+    {
+      "start_s": 12.6,
+      "end_s": 14.2,
+      "manual": "front",
+      "frame_counts": {
+        "front": 8
+      },
+      "longest_run_s": {
+        "front": 1.4000000000000004,
+        "turned": 0.0
+      },
+      "sustained_manual_state_detected": true
+    },
+    {
+      "start_s": 17.4,
+      "end_s": 20.4,
+      "manual": "turned",
+      "frame_counts": {
+        "turned": 15
+      },
+      "longest_run_s": {
+        "front": 0.0,
+        "turned": 2.8000000000000007
+      },
+      "sustained_manual_state_detected": true
+    },
+    {
+      "start_s": 23.4,
+      "end_s": 25.0,
+      "manual": "front",
+      "frame_counts": {
+        "front": 8
+      },
+      "longest_run_s": {
+        "front": 1.4000000000000021,
+        "turned": 0.0
+      },
+      "sustained_manual_state_detected": true
+    }
+  ],
+  "samples": [
+    {
+      "frame": 10,
+      "time_s": 0.4,
+      "window_index": 0,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 5.254303932189941,
+      "quality_issue": null
+    },
+    {
+      "frame": 15,
+      "time_s": 0.6,
+      "window_index": 0,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 5.287278652191162,
+      "quality_issue": null
+    },
+    {
+      "frame": 20,
+      "time_s": 0.8,
+      "window_index": 0,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 5.301970958709717,
+      "quality_issue": null
+    },
+    {
+      "frame": 25,
+      "time_s": 1.0,
+      "window_index": 0,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 5.615344524383545,
+      "quality_issue": null
+    },
+    {
+      "frame": 30,
+      "time_s": 1.2,
+      "window_index": 0,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 5.785163402557373,
+      "quality_issue": null
+    },
+    {
+      "frame": 35,
+      "time_s": 1.4,
+      "window_index": 0,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 5.022270202636719,
+      "quality_issue": null
+    },
+    {
+      "frame": 40,
+      "time_s": 1.6,
+      "window_index": 0,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 4.881864547729492,
+      "quality_issue": null
+    },
+    {
+      "frame": 110,
+      "time_s": 4.4,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 76.4462890625,
+      "quality_issue": null
+    },
+    {
+      "frame": 115,
+      "time_s": 4.6,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 76.5801010131836,
+      "quality_issue": null
+    },
+    {
+      "frame": 120,
+      "time_s": 4.8,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 78.78276824951172,
+      "quality_issue": null
+    },
+    {
+      "frame": 125,
+      "time_s": 5.0,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 80.33113098144531,
+      "quality_issue": null
+    },
+    {
+      "frame": 130,
+      "time_s": 5.2,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 80.79637145996094,
+      "quality_issue": null
+    },
+    {
+      "frame": 135,
+      "time_s": 5.4,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 81.68630981445312,
+      "quality_issue": null
+    },
+    {
+      "frame": 140,
+      "time_s": 5.6,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 78.60646057128906,
+      "quality_issue": null
+    },
+    {
+      "frame": 145,
+      "time_s": 5.8,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 81.66410064697266,
+      "quality_issue": null
+    },
+    {
+      "frame": 150,
+      "time_s": 6.0,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 82.61688232421875,
+      "quality_issue": null
+    },
+    {
+      "frame": 155,
+      "time_s": 6.2,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 79.80201721191406,
+      "quality_issue": null
+    },
+    {
+      "frame": 160,
+      "time_s": 6.4,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 81.08077239990234,
+      "quality_issue": null
+    },
+    {
+      "frame": 165,
+      "time_s": 6.6,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 80.19768524169922,
+      "quality_issue": null
+    },
+    {
+      "frame": 170,
+      "time_s": 6.8,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 81.82935333251953,
+      "quality_issue": null
+    },
+    {
+      "frame": 175,
+      "time_s": 7.0,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 81.13423919677734,
+      "quality_issue": null
+    },
+    {
+      "frame": 180,
+      "time_s": 7.2,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 81.23353576660156,
+      "quality_issue": null
+    },
+    {
+      "frame": 185,
+      "time_s": 7.4,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 80.22964477539062,
+      "quality_issue": null
+    },
+    {
+      "frame": 190,
+      "time_s": 7.6,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 81.44287109375,
+      "quality_issue": null
+    },
+    {
+      "frame": 195,
+      "time_s": 7.8,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 79.76980590820312,
+      "quality_issue": null
+    },
+    {
+      "frame": 200,
+      "time_s": 8.0,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 78.18910217285156,
+      "quality_issue": null
+    },
+    {
+      "frame": 205,
+      "time_s": 8.2,
+      "window_index": 1,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 78.81809997558594,
+      "quality_issue": null
+    },
+    {
+      "frame": 315,
+      "time_s": 12.6,
+      "window_index": 2,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 2.5218117237091064,
+      "quality_issue": null
+    },
+    {
+      "frame": 320,
+      "time_s": 12.8,
+      "window_index": 2,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 2.874805450439453,
+      "quality_issue": null
+    },
+    {
+      "frame": 325,
+      "time_s": 13.0,
+      "window_index": 2,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 3.4000697135925293,
+      "quality_issue": null
+    },
+    {
+      "frame": 330,
+      "time_s": 13.2,
+      "window_index": 2,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 3.6066832542419434,
+      "quality_issue": null
+    },
+    {
+      "frame": 335,
+      "time_s": 13.4,
+      "window_index": 2,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 4.270905017852783,
+      "quality_issue": null
+    },
+    {
+      "frame": 340,
+      "time_s": 13.6,
+      "window_index": 2,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 4.204771995544434,
+      "quality_issue": null
+    },
+    {
+      "frame": 345,
+      "time_s": 13.8,
+      "window_index": 2,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 4.379716396331787,
+      "quality_issue": null
+    },
+    {
+      "frame": 350,
+      "time_s": 14.0,
+      "window_index": 2,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 4.187082290649414,
+      "quality_issue": null
+    },
+    {
+      "frame": 435,
+      "time_s": 17.4,
+      "window_index": 3,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 83.86054229736328,
+      "quality_issue": null
+    },
+    {
+      "frame": 440,
+      "time_s": 17.6,
+      "window_index": 3,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 84.70632934570312,
+      "quality_issue": null
+    },
+    {
+      "frame": 445,
+      "time_s": 17.8,
+      "window_index": 3,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 85.03497314453125,
+      "quality_issue": null
+    },
+    {
+      "frame": 450,
+      "time_s": 18.0,
+      "window_index": 3,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 83.05287170410156,
+      "quality_issue": null
+    },
+    {
+      "frame": 455,
+      "time_s": 18.2,
+      "window_index": 3,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 83.75660705566406,
+      "quality_issue": null
+    },
+    {
+      "frame": 460,
+      "time_s": 18.4,
+      "window_index": 3,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 83.6554183959961,
+      "quality_issue": null
+    },
+    {
+      "frame": 465,
+      "time_s": 18.6,
+      "window_index": 3,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 82.7345199584961,
+      "quality_issue": null
+    },
+    {
+      "frame": 470,
+      "time_s": 18.8,
+      "window_index": 3,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 83.46288299560547,
+      "quality_issue": null
+    },
+    {
+      "frame": 475,
+      "time_s": 19.0,
+      "window_index": 3,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 83.2919921875,
+      "quality_issue": null
+    },
+    {
+      "frame": 480,
+      "time_s": 19.2,
+      "window_index": 3,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 84.64148712158203,
+      "quality_issue": null
+    },
+    {
+      "frame": 485,
+      "time_s": 19.4,
+      "window_index": 3,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 82.02609252929688,
+      "quality_issue": null
+    },
+    {
+      "frame": 490,
+      "time_s": 19.6,
+      "window_index": 3,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 81.73135375976562,
+      "quality_issue": null
+    },
+    {
+      "frame": 495,
+      "time_s": 19.8,
+      "window_index": 3,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 82.36551666259766,
+      "quality_issue": null
+    },
+    {
+      "frame": 500,
+      "time_s": 20.0,
+      "window_index": 3,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 82.13072204589844,
+      "quality_issue": null
+    },
+    {
+      "frame": 505,
+      "time_s": 20.2,
+      "window_index": 3,
+      "manual": "turned",
+      "predicted": "turned",
+      "axis_angle_degrees": 82.13972473144531,
+      "quality_issue": null
+    },
+    {
+      "frame": 585,
+      "time_s": 23.4,
+      "window_index": 4,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 3.0508203506469727,
+      "quality_issue": null
+    },
+    {
+      "frame": 590,
+      "time_s": 23.6,
+      "window_index": 4,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 2.320012092590332,
+      "quality_issue": null
+    },
+    {
+      "frame": 595,
+      "time_s": 23.8,
+      "window_index": 4,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 2.2754626274108887,
+      "quality_issue": null
+    },
+    {
+      "frame": 600,
+      "time_s": 24.0,
+      "window_index": 4,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 2.215406656265259,
+      "quality_issue": null
+    },
+    {
+      "frame": 605,
+      "time_s": 24.2,
+      "window_index": 4,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 2.6159133911132812,
+      "quality_issue": null
+    },
+    {
+      "frame": 610,
+      "time_s": 24.4,
+      "window_index": 4,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 2.318493127822876,
+      "quality_issue": null
+    },
+    {
+      "frame": 615,
+      "time_s": 24.6,
+      "window_index": 4,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 2.405012845993042,
+      "quality_issue": null
+    },
+    {
+      "frame": 620,
+      "time_s": 24.8,
+      "window_index": 4,
+      "manual": "front",
+      "predicted": "front",
+      "axis_angle_degrees": 1.999977707862854,
+      "quality_issue": null
+    }
+  ]
+}
