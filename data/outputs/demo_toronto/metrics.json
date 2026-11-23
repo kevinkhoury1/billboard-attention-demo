@@ -1,0 +1,52 @@
+{
+  "phase": 1,
+  "site_id": "toronto_01",
+  "scenario": "city_intersection_day_digital",
+  "zone_kind": "billboard_visibility",
+  "zone_basis": "Approximate road area on the visible side of the 10 Dundas East curved digital display. Count right-to-left traffic in the far-side approach lane. Geometry is marked for the first 12 seconds. This is a screen-level potential viewing zone. Creative rotation, vehicle sightlines and temporary obstructions are unverified.",
+  "provenance": {
+    "filename": "toronto_01.mp4",
+    "source_url": "https://www.pexels.com/video/dynamic-urban-intersection-with-billboards-34602127/",
+    "creator": "Hao Le",
+    "licence": "Pexels License",
+    "licence_url": "https://www.pexels.com/license/",
+    "date_checked": "2026-11-05",
+    "location": "Yonge and Dundas, Toronto (10 Dundas Street East)",
+    "conditions": "Educational analysis of a single clip. Use only the first 12 seconds with this annotation."
+  },
+  "measurement": {
+    "model": "yolo11m.pt",
+    "tracker": "ByteTrack",
+    "frames_processed": 121,
+    "observation_s": 12.0,
+    "crossing_direction": "negative_to_positive",
+    "calibration_source": null,
+    "settings": {
+      "model": "yolo11m.pt",
+      "sample_fps": 10,
+      "image_size": 640,
+      "tracker_input_confidence": 0.1,
+      "nms_iou": 0.5,
+      "min_box_area_px": 100,
+      "class_confidence": {
+        "car": 0.35,
+        "motorcycle": 0.35,
+        "bus": 0.35,
+        "truck": 0.35
+      },
+      "max_track_gap_s": 0.5,
+      "speed_window_s": 0.4
+    }
+  },
+  "vehicle_passages": 4,
+  "passages_by_class": {
+    "car": 3,
+    "truck": 1
+  },
+  "zone_tracks_observed": 7,
+  "complete_zone_visits": 8,
+  "partial_zone_visits": 8,
+  "median_complete_zone_time_s": 0.6000000000000001,
+  "complete_visits_with_speed": 0,
+  "median_complete_visit_speed_kmh": null
+}

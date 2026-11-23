@@ -1,0 +1,52 @@
+{
+  "phase": 1,
+  "site_id": "london_01",
+  "scenario": "city_intersection_night_digital",
+  "zone_kind": "billboard_visibility",
+  "zone_basis": "Approximate road strip across the visible side of Piccadilly Lights at Piccadilly Circus. Count left-to-right vehicles on the marked segment in the first 12 seconds. This is a screen-level potential viewing zone. The upper screen edge is cropped, and the driver's sightline, spot schedule and temporary obstructions are unverified.",
+  "provenance": {
+    "filename": "london_01.mp4",
+    "source_url": "https://www.pexels.com/video/illuminated-billboard-along-the-road-2112773/",
+    "creator": "George Morina",
+    "licence": "Pexels License",
+    "licence_url": "https://www.pexels.com/license/",
+    "date_checked": "2026-11-05",
+    "location": "Piccadilly Lights at Piccadilly Circus, London",
+    "conditions": "Educational vehicle analysis. Use the first 12 seconds with this annotation."
+  },
+  "measurement": {
+    "model": "yolo11m.pt",
+    "tracker": "ByteTrack",
+    "frames_processed": 120,
+    "observation_s": 11.9119,
+    "crossing_direction": "positive_to_negative",
+    "calibration_source": null,
+    "settings": {
+      "model": "yolo11m.pt",
+      "sample_fps": 10,
+      "image_size": 640,
+      "tracker_input_confidence": 0.1,
+      "nms_iou": 0.5,
+      "min_box_area_px": 100,
+      "class_confidence": {
+        "car": 0.35,
+        "motorcycle": 0.35,
+        "bus": 0.35,
+        "truck": 0.35
+      },
+      "max_track_gap_s": 0.5,
+      "speed_window_s": 0.4
+    }
+  },
+  "vehicle_passages": 7,
+  "passages_by_class": {
+    "bus": 1,
+    "car": 6
+  },
+  "zone_tracks_observed": 8,
+  "complete_zone_visits": 0,
+  "partial_zone_visits": 10,
+  "median_complete_zone_time_s": null,
+  "complete_visits_with_speed": 0,
+  "median_complete_visit_speed_kmh": null
+}

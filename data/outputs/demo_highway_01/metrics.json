@@ -1,0 +1,51 @@
+{
+  "phase": 1,
+  "site_id": "highway_01",
+  "scenario": "highway_day",
+  "zone_kind": "traffic_only",
+  "zone_basis": "Manually marked section of the approaching carriageway in the stock clip. The counting line follows the overpass shadow across part of that carriageway.",
+  "provenance": {
+    "filename": "highway_01.mp4",
+    "source_url": "https://www.pexels.com/video/traffic-on-the-580-freeway-san-francisco-bay-area-19347491/",
+    "creator": "Emmett Loverde",
+    "licence": "Pexels License",
+    "licence_url": "https://www.pexels.com/license/",
+    "date_checked": "2026-11-05",
+    "location": "San Francisco Bay Area (as listed by uploader)",
+    "conditions": "Educational traffic analysis. Follow Pexels terms for any footage reuse."
+  },
+  "measurement": {
+    "model": "yolo11m.pt",
+    "tracker": "ByteTrack",
+    "frames_processed": 275,
+    "observation_s": 27.402375,
+    "crossing_direction": "negative_to_positive",
+    "calibration_source": null,
+    "settings": {
+      "model": "yolo11m.pt",
+      "sample_fps": 10,
+      "image_size": 640,
+      "tracker_input_confidence": 0.1,
+      "nms_iou": 0.5,
+      "min_box_area_px": 100,
+      "class_confidence": {
+        "car": 0.35,
+        "motorcycle": 0.35,
+        "bus": 0.35,
+        "truck": 0.35
+      },
+      "max_track_gap_s": 0.5,
+      "speed_window_s": 0.4
+    }
+  },
+  "vehicle_passages": 10,
+  "passages_by_class": {
+    "car": 10
+  },
+  "zone_tracks_observed": 25,
+  "complete_zone_visits": 1,
+  "partial_zone_visits": 32,
+  "median_complete_zone_time_s": 6.297958333333332,
+  "complete_visits_with_speed": 0,
+  "median_complete_visit_speed_kmh": null
+}
