@@ -2,6 +2,23 @@
 
 The study compares billboard locations using observed traffic and potential viewing time, then asks whether the evidence changes a media buying or creative decision. Phase 1 produces auditable measurements from real footage. The included highway clip is a technical test case. Its marked road section measures traffic and road-zone time.
 
+## Download the video clips first
+
+The licensed clips are not stored in the repository (`data/raw_videos/` is gitignored). Download each one from Pexels and save it in `data/raw_videos/` under **exactly** this filename, because the site configs and commands refer to these names:
+
+| Save as | Source | Used for |
+|---|---|---|
+| `highway_01.mp4` | [Traffic on the 580 freeway](https://www.pexels.com/video/traffic-on-the-580-freeway-san-francisco-bay-area-19347491/) (1280 × 720) | Phase 1 vehicle counts |
+| `toronto_01.mp4` | [Urban intersection with billboards](https://www.pexels.com/video/dynamic-urban-intersection-with-billboards-34602127/) | Vehicle and pedestrian attention (first 12 s) |
+| `london_01.mp4` | [Illuminated billboard along the road](https://www.pexels.com/video/illuminated-billboard-along-the-road-2112773/) | Vehicle analysis (first 12 s) |
+| `head_turn.mp4` | [A man turning his head sideways](https://www.pexels.com/video/a-man-turning-his-head-sideways-5474326/) | Head-direction check |
+
+Notes:
+- The scripts do not scan the folder on their own. After the clips are in place, run each pipeline command below with `--video data/raw_videos/<name>.mp4`; YOLO11m weights download automatically on first run.
+- If a downloaded copy has a different resolution or crop than the one used here, the coordinates in `config/sites/*.yaml` will not line up. Redraw them with `scripts/annotate_site.py`.
+- The dashboard (`Open Dashboard.cmd`) only reads saved results in `data/outputs/` and does not need the clips.
+- Source, author and licence for each clip are in `data/licence_log.csv`.
+
 ## Phase 1 checkpoint
 
 Use PowerShell from this project folder. A local Python environment, the YOLO11m weights, and the licensed highway clip were prepared on the project machine. On a fresh machine with Python 3.11, install the dependencies with the commands below. The model downloads on first use if `weights/yolo11m.pt` is absent. Download the [highway clip](https://www.pexels.com/video/traffic-on-the-580-freeway-san-francisco-bay-area-19347491/) and save the 1280 × 720 version as `data/raw_videos/highway_01.mp4`. If your copy has a different resolution or crop, draw a new site annotation for that copy.
